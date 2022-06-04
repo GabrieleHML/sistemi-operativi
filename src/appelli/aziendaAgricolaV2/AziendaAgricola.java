@@ -19,8 +19,8 @@ public abstract class AziendaAgricola {
         Magazziniere m = new Magazziniere(this);
         m.setDaemon(true);
         m.start();
-
         Cliente[] lista = new Cliente[numClienti];
+
 
         for (int i = 0; i < numClienti; i++) {
             lista[i] = new Cliente(this);
